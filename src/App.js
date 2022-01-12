@@ -1,22 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import './neoStyle.css';
+import CryptoSelect from './components/cryptoSelect/cryptoSelect';
+import MarketCap from './components/marketCap/marketCap';
+import Price from './components/Price/price';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+	  <div class={'neo_glass2'}>
+	  <CryptoSelect></CryptoSelect>
+		<MarketCap></MarketCap>
+		<Price></Price>
+		</div>
       </header>
     </div>
   );
